@@ -1,7 +1,7 @@
 import "./Nav.css";
 
 const Nav = () => {
-  return <div className="Nav">Nav works</div>;
+  return <nav className="Nav"></nav>;
 };
 
 export default Nav;

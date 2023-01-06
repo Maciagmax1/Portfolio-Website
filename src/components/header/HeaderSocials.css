@@ -1,0 +1,16 @@
+.HeaderSocials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: -3rem;
+  bottom: 3rem;
+}
+
+.HeaderSocials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}

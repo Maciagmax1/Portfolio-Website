@@ -1,0 +1,47 @@
+.Header header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.Header .header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.Header .me {
+  background: linear-gradient(var(--color-primary), transparent);
+  border-radius: 25%;
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 15rem);
+  margin-top: 4rem;
+  border-radius: 12rem 12rem 0 0;
+}
+
+.scroll__down {
+  position: absolute;
+  right: -2.3rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1025px) {
+  header {
+    height: 68vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .HeaderSocials,
+  .scroll__down {
+    display: none;
+  }
+}
