@@ -1,7 +1,7 @@
 import "./Portfolio.css";
 
 const Portfolio = () => {
-  return <div className="Portfolio">Portfolio works</div>;
+  return <section className="Portfolio">Portfolio works</section>;
 };
 
 export default Portfolio;
