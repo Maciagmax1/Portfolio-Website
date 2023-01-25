@@ -5,7 +5,7 @@ import { AiOutlineFolderOpen } from "react-icons/ai";
 
 const About = () => {
   return (
-    <section className="About">
+    <section className="About" id="about">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
       <div className="container about__container">

@@ -3,6 +3,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { BiMessageSquareDetail } from "react-icons/bi";
+import { TfiFolder } from "react-icons/tfi";
 import { useState } from "react";
 
 const Nav = () => {
@@ -29,6 +30,13 @@ const Nav = () => {
         onClick={() => setActiveNav("#experience")}
       >
         <BiBook />
+      </a>
+      <a
+        href="#portfolio"
+        className={activeNav === "#portfolio" ? "active" : ""}
+        onClick={() => setActiveNav("#portfolio")}
+      >
+        <TfiFolder />
       </a>
       <a
         href="#contact"

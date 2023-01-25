@@ -8,7 +8,7 @@ const Portfolio = () => {
   const [src2, setSrc2] = useState(qwikFlixVid);
 
   return (
-    <section className="Portfolio">
+    <section className="Portfolio" id="portfolio">
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">

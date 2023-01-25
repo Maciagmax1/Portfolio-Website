@@ -1,9 +1,26 @@
 import "./Contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { BsLinkedin } from "react-icons/bs";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
+import { useState } from "react";
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_uupvdvh",
+      "template_1j9ii41",
+      e.currentTarget,
+      "wqEjxYC70c_FjD9Ts"
+    );
+    e.target.reset();
+  };
+
   return (
-    <section className="Contact">
+    <section className="Contact" id="contact">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
       <div className="container contact__container">
@@ -23,7 +40,7 @@ const Contact = () => {
             </a>
           </article>
         </div>
-        <form action="">
+        <form onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
