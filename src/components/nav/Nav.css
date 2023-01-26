@@ -2,13 +2,14 @@ nav {
   background: rgba(0, 0, 0, 0.3);
   width: max-content;
   display: block;
-  padding: 0.7rem 1.7rem;
+  padding: 1.3rem 0.7rem;
   z-index: 2;
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 2rem;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
+  flex-direction: column;
   gap: 0.8rem;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
@@ -20,7 +21,7 @@ nav a {
   border-radius: 50%;
   display: flex;
   color: var(--color-light);
-  font-size: 1.1rem;
+  font-size: 2rem;
 }
 
 nav a:hover {
@@ -30,4 +31,28 @@ nav a:hover {
 nav a.active {
   background: var(--color-primary);
   color: var(--color-bg);
+}
+
+@media screen and (max-width: 1025px) {
+  nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  nav a {
+    font-size: 1.1;
+  }
 }

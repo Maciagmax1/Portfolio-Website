@@ -1,11 +1,12 @@
 import "./Experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
+import aboutMe from "../../assets/about-me.jpg";
 
 const Experience = () => {
   return (
     <section className="Experience" id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <h5>What I'm Capable Of</h5>
+      <h2>My Skills</h2>
       <div className="container experience__container">
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
@@ -75,7 +76,7 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>Firebase Services</h4>
+                <h4>Firebase</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
@@ -96,11 +97,16 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>C#</h4>
+                <h4>REST APIs</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
           </div>
+        </div>
+      </div>
+      <div className="about__me">
+        <div className="about__me-image">
+          <img src={aboutMe} alt="about image" />
         </div>
       </div>
     </section>

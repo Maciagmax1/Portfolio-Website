@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="Footer">
       <a href="#" className="footer__logo">
-        Max
+        Max Maciag
       </a>
       <ul className="permalinks">
         <li>
@@ -16,7 +16,7 @@ const Footer = () => {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <a href="#experience">Skills</a>
         </li>
         <li>
           <a href="#portfolio">Portfolio</a>

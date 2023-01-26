@@ -5,7 +5,8 @@
   gap: 0.8rem;
   position: absolute;
   left: -3rem;
-  bottom: 3rem;
+  bottom: -3rem;
+  font-size: 2rem;
 }
 
 .HeaderSocials::after {
@@ -13,4 +14,10 @@
   width: 1px;
   height: 2rem;
   background: var(--color-primary);
+}
+
+@media screen and (max-width: 1025px) {
+  .HeaderSocials {
+    display: none;
+  }
 }

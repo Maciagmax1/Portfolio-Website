@@ -9,6 +9,7 @@
   text-align: center;
   background: var(--color-bg-variant);
   padding: 2rem 3rem;
+  padding-bottom: 3.5rem;
   border-radius: 2rem;
   border: 2px solid var(--color-primary-variant);
   transition: var(--transition);
@@ -44,7 +45,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .Portfolio .project__vid-container {
     width: 100%;
   }
