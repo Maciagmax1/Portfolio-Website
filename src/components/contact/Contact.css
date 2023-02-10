@@ -1,5 +1,4 @@
 .Contact .contact__container {
-  width: var(--container-width-lg);
   display: grid;
   grid-template-columns: 30% 58%;
   gap: 8%;

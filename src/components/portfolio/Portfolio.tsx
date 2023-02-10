@@ -51,7 +51,7 @@ const Portfolio = () => {
         <article className="portfolio__item">
           <h3>Isallo</h3>
           <p>
-            isallo is a virtual journal that helps users track their emotional
+            Isallo is a virtual journal that helps users track their emotional
             trends over time. By evaluating our feelings and experiences, we can
             better understand ourselves and the world around us. In order to
             gain a better understanding of ourselves the user can see a visual

@@ -52,9 +52,9 @@
 }
 
 .about__me {
-  margin-left: calc(50% - 25rem);
-  margin-top: 8rem;
-  width: 50rem;
+  margin-left: calc(50% - 17rem);
+  margin-top: 4rem;
+  width: 34rem;
   aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(
@@ -110,5 +110,22 @@
   .experience__container > div {
     width: 100%;
     padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .experience__container {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .experience__frontend,
+  .experience__backend {
+    transform: scale(0.96);
+  }
+
+  .about__me {
+    width: 18rem;
+    margin-left: calc(50% - 9rem);
   }
 }

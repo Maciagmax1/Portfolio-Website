@@ -4,3 +4,13 @@
   gap: 1.2rem;
   justify-content: center;
 }
+
+@media screen and (max-width: 550px) {
+  .CTA {
+    gap: 0.7rem;
+  }
+
+  .CTA a {
+    font-size: 1rem;
+  }
+}

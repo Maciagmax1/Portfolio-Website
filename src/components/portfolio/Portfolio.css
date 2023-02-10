@@ -50,3 +50,13 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .Portfolio .portfolio__item {
+    padding-bottom: 1.75rem;
+  }
+  .Portfolio .project__vid-container {
+    transform: scale(1.1);
+    margin-top: 1rem;
+  }
+}

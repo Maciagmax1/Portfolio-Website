@@ -1,7 +1,6 @@
 nav {
   background: rgba(0, 0, 0, 0.3);
   width: max-content;
-  display: block;
   padding: 1.3rem 0.7rem;
   z-index: 2;
   position: fixed;
@@ -37,7 +36,6 @@ nav a.active {
   nav {
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
-    display: block;
     padding: 0.7rem 1.7rem;
     z-index: 2;
     position: fixed;
@@ -54,5 +52,25 @@ nav a.active {
 
   nav a {
     font-size: 1.1;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  nav {
+    transform: translateX(-50%) scale(0.9);
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    top: auto;
+    bottom: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
   }
 }
