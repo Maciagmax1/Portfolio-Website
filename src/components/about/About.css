@@ -99,7 +99,10 @@
   }
 
   .about__content p {
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 0 0;
+  }
+  .About .readMoreOrLess {
+    margin-bottom: 1.5rem;
   }
 
   .About .about__card {

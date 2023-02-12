@@ -5,6 +5,9 @@ import { BiBook } from "react-icons/bi";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { TfiFolder } from "react-icons/tfi";
 import { useEffect, useState } from "react";
+import { VscOpenPreview } from "react-icons/vsc";
+import { FaRegFolder } from "react-icons/fa";
+import { MdOutlineRecommend } from "react-icons/md";
 
 interface Props {
   inView: boolean;
@@ -13,6 +16,7 @@ interface Props {
   isExperienceVisible: boolean;
   isPortfolioVisible: boolean;
   isContactVisible: boolean;
+  isRecVisible: boolean;
 }
 
 const Nav = ({
@@ -22,6 +26,7 @@ const Nav = ({
   isExperienceVisible,
   isPortfolioVisible,
   isContactVisible,
+  isRecVisible,
 }: Props) => {
   const [activeNav, setActiveNav] = useState("#");
   return (
@@ -52,7 +57,14 @@ const Nav = ({
         className={isPortfolioVisible ? "active" : ""}
         onClick={() => setActiveNav("#portfolio")}
       >
-        <TfiFolder />
+        <FaRegFolder />
+      </a>
+      <a
+        href="#recommendations"
+        className={isRecVisible ? "active" : ""}
+        onClick={() => setActiveNav("#recommendations")}
+      >
+        <MdOutlineRecommend />
       </a>
       <a
         href="#contact"

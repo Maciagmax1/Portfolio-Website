@@ -1,0 +1,134 @@
+/* .Recommendations {
+  margin-top: 13rem;
+} */
+
+.Recommendations .recommendations__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.Recommendations .recommendations__card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+  width: fit-content auto;
+}
+
+.Recommendations .recommendations__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.recommendations__icon {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.recommendations__card h5 {
+  font-size: 1.6rem;
+}
+
+.recommendations__card small {
+  font-size: 1.2rem;
+  color: var(--color-light);
+}
+
+.recommendations__content p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.Recommendations .recommendations__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .Recommendations .recommendations__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recommendations__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+
+  .recommendations__content p {
+    margin: 1rem 0 1.5rem;
+  }
+
+  .Recommendations .recommendations__cards {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .Recommendations .recommendations__card > h5 {
+    font-size: 1.4rem;
+  }
+  .Recommendations .recommendations__card > small {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .recommendations__me {
+    width: 55%;
+    margin: 0 auto 3rem;
+  }
+
+  .recommendations__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .recommendations__content {
+    text-align: center;
+  }
+
+  .recommendations__content p {
+    margin: 1.5rem 0;
+  }
+
+  .Recommendations .recommendations__card {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    width: fit-content;
+  }
+
+  .recommendations__card h5 {
+    font-size: 1.3rem;
+  }
+
+  .recommendations__card small {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Recommendations .recommendations__card {
+    transform: scale(0.99);
+    width: 100%;
+  }
+
+  .Recommendations .recommendations__cards {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .Recommendations h2 {
+    font-size: 2rem;
+  }
+}

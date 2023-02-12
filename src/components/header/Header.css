@@ -15,14 +15,13 @@
 }
 
 .Header .me {
-  background: linear-gradient(var(--color-primary), transparent);
-  border-radius: 25%;
   width: 28rem;
   height: 28rem;
-  /* position: absolute; */
   left: calc(50% - 14rem);
   margin-top: 3rem;
-  border-radius: 12rem 12rem 0 0;
+}
+.Header .me img {
+  border-radius: 5rem;
 }
 
 .scroll__down {
