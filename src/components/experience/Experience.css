@@ -47,8 +47,9 @@
 }
 
 .experience__details-icon {
-  margin-top: 6px;
   color: var(--color-primary);
+  margin-top: 0.6rem;
+  margin-right: 0.5rem;
 }
 
 .about__me {

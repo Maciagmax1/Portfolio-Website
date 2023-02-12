@@ -3,11 +3,9 @@ import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { BiMessageSquareDetail } from "react-icons/bi";
-import { TfiFolder } from "react-icons/tfi";
-import { useEffect, useState } from "react";
-import { VscOpenPreview } from "react-icons/vsc";
+import { useState } from "react";
 import { FaRegFolder } from "react-icons/fa";
-import { MdOutlineRecommend } from "react-icons/md";
+import { FiThumbsUp } from "react-icons/fi";
 
 interface Props {
   inView: boolean;
@@ -64,7 +62,7 @@ const Nav = ({
         className={isRecVisible ? "active" : ""}
         onClick={() => setActiveNav("#recommendations")}
       >
-        <MdOutlineRecommend />
+        <FiThumbsUp />
       </a>
       <a
         href="#contact"
